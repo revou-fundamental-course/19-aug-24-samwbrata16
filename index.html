@@ -70,34 +70,35 @@
 		<hr />
 		
 		<section class="form-container">
-			<form action="" method="POST" id="form-message">
+			<form name="message-form" onsubmit="return validateForm()">
 				<h1>Message Us</h1>
-				<label for="name">Name </label>
-				<input id="name" type="text"></input>
-				<br>
-				<label for="dob">Date of Birth </label>
-				<input id="dob" type="date"></input>
-				<br>
-				<p>Gender</p>
-				<input type="radio" id="male" name="gender" value="Male">
-				<label for="male">Male</label><br>
-				<input type="radio" id="female" name="gender" value="Female">
-				<label for="female">Female</label><br>
-				<p>Message</p>
-				<textarea name="message" id="form-message">Message</textarea>
-				<br>
+				Name: <input placeholder="Name" type="text" name="name" />
+				<br />
+				
+				Date of Birth: <input type="date" name="birth-date" />
+				<br />
+				
+				Gender:
+				<input type="radio" id="male" name="gender" value="male">
+				<label for="male">Male</label>
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female">Female</label>
+				<br />
+				
+				Message:
+				<textarea placeholder="Type message" name="message"></textarea>
+				<br />
+				
 				<input type="submit" value="Submit">
 			</form>
 			
 			<div class="message-container">
-				<article>
 					<p>Current time: </p>
 					<br>
-					<p>Name: </p>
-					<p>Date of Birth: </p>
-					<p> Gender: </p>
-					<p>Message: </p>
-				</article>
+					<p>Name: <span id="sender-name"></span></p>
+					<p>Date of Birth: <span id="sender-birth-date"></span></p>
+					<p> Gender: <span id="sender-gender"></span></p>
+					<p>Message: <span id="sender-message"></span></p>
 			</div>
 		</section>
 	
@@ -108,6 +109,7 @@
 	<footer>
 		<p>Made by SW</p>
 	</footer>
+		<script src="js/script.js"></script>
 </body>
 
 </html>
