@@ -45,13 +45,24 @@ nav{
 }	
 
 .profile-img{
-	border: 1px solid; 
 	height: 50px; 
 	background-image: url('https://picsum.photos/250'); 
 	background-size: cover; 
 	border-position: center;
 	border-radius: 50%;
 	width: 50px;
+}	
+
+.form-container{
+	flex-direction: row; 
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.message-container{
+	border: 1px solid;
+	margin: 10px;
+	padding-right: 100px;
 }	
 
 footer{
