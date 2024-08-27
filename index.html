@@ -4,12 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/styles.css"
+	<title>RevoU SEFC Mini Project</title>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-	<nav>
+	<nav class="header-wrapper">
 		<header>
 			<div class="logo-icon">
 			</div>
@@ -18,8 +18,7 @@
 		<section class="nav-container">
 			<a href="" class="nav-item">Home</a>
 			<a href="#our-profile" class="nav-item">Our Profile</a>
-			<a href="" class="nav-item">Achivements</a>
-			<a href="" class="nav-item">Message Us</a>
+			<a href="#message-us" class="nav-item">Message Us</a>
 		</section>
 	</nav>
 	
@@ -28,13 +27,24 @@
 	<main>
 		<article>
 			<header>
-				<h1>Welcome user, to our website</h1>
+				<h1>Welcome user, to our website</h1>  
 			</header>
 			
-			<p>Lorem ipsum dolor sit amet adipiscing</p>
+			<p><b><i>Moonstone</i> - An Independent Bookstore/Cafe</b></p>
 			
-			<div class="banner-img"> 
+			<div> 
+				<img 
+					class="img-slideshow" src="css/photo-unsplash-1.jpg"
+				/>
+				<img 
+					class="img-slideshow" src="css/photo-unsplash-2.jpg"
+				/>	
+				<img 
+					class="img-slideshow" src="css/photo-unsplash-3.jpg"
+				/>			
 			</div>
+			<button onclick="plusDivs(-1)">Previous</button>
+			<button onclick="plusDivs(1)">Next</button>
 		</article>
 		
 		<hr />
@@ -45,31 +55,50 @@
 			</header>
 			
 			<section class="profile-container"> 
+				<div class="profile-text">
+					<p>Moonstone is a fictional independent bookstore/cafe based in Jakarta, Indonesia. 
+					Founded in 2014, we provide imported novels and comics/manga.
+					We also provide a cozy place where you can hang out and read while having a cup of coffee, tea and/or snacks.
+					</p>
+				</div>
+				
+				
+			</section>
+		</section>
+		
+		<hr />
+		
+		<section id="our-profile2">
+			<header>
+				<h1>What We Offer</h1>
+			</header>
+			
+			<section class="profile-container"> 
 				<div class="profile-item">
 					<div class="profile-img"> </div>
-					<h2>Software Engineer</h2>
+					<h5>Import Novels and Comics/Manga of Many Genres</h5>
 				</div>
 				
 				<div class="profile-item">
 					<div class="profile-img"> </div>
-					<h2>Software Engineer</h2>
+					<h5>Reasonable Prices</h5>
 				</div>
 				
 				<div class="profile-item">
 					<div class="profile-img"> </div>
-					<h2>Software Engineer</h2>
+					<h5>Cozy Spot to Read and Hangout</h5>
 				</div>
 				
 				<div class="profile-item">
 					<div class="profile-img"> </div>
-					<h2>Software Engineer</h2>
+					<h5>A Variety of Drinks and Snacks</h5>
 				</div>
 			</section>
 		</section>
 		
 		<hr />
 		
-		<section class="form-container">
+		<section class="form-container" id="message-us">
 			<form name="message-form" onsubmit="return validateForm()">
 				<h1>Message Us</h1>
 				Name: <input placeholder="Name" type="text" name="name" />
