@@ -1,0 +1,86 @@
+/* Ini CSS */
+
+body{
+	background-color: #FFE4B5;
+}	
+
+nav{
+	display: flex; 
+	align-items: center; 
+	justify-content: space-between;	
+}
+	
+.logo-icon{
+	height: 48px; 
+	width: 48px; 
+	border-radius: 50%;
+}
+
+.nav-container{
+	display: flex;	
+}	
+
+.nav-item{
+	border: 1px solid; 
+	color: black; 
+	text-decoration: none; 
+	font-size: 16px; 
+	font-weight: bold; 
+	padding: 8px; 
+	border-radius: 8px;
+}	
+
+.img-slideshow{
+	height: 500px; 
+	width: 1000px;
+}
+	
+.profile-container{
+	display: flex; 
+	justify-content: space-around;	
+}
+	
+.profile-item{
+	height: 100px;
+	text-align: -webkit-center;
+}	
+
+.profile-img{
+	height: 50px; 
+	border-position: center;
+	border-radius: 50%;
+	width: 50px;
+}	
+
+.form-container{
+	flex-direction: row; 
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.message-container{
+	border: 1px solid;
+	margin: 10px;
+	padding-right: 100px;
+}	
+
+footer{
+	text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+	.header-wrapper {
+		flex-direction: column;
+	}
+	.nav-container{
+		width: 100%;
+		flex-direction: column;	
+	}	
+	.logo-icon{
+		margin-bottom: 20px;	
+	}
+
+	.img-slideshow{
+		width: 100%;
+	}	
+}	
