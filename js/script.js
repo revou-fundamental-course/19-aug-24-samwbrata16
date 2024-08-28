@@ -1,5 +1,14 @@
 // Ini JavaScript
 
+function replaceName () {
+var welcomeName = prompt ("Hi, What's your name?", "");
+document.getElementById("welcome-name").innerHTML = welcomeName;
+}
+
+document.getElementById('name-button').addEventListener("click", function() {
+	replaceName();
+})
+
 var slideIndex = 1;
 	showDivs(slideIndex);
 	

@@ -13,8 +13,6 @@ nav{
 .logo-icon{
 	height: 48px; 
 	width: 48px; 
-	background-image: url('https://picsum.photos/200'); 
-	background-size: cover; 
 	border-radius: 50%;
 }
 
@@ -49,8 +47,6 @@ nav{
 
 .profile-img{
 	height: 50px; 
-	background-image: url('https://picsum.photos/250'); 
-	background-size: cover; 
 	border-position: center;
 	border-radius: 50%;
 	width: 50px;
