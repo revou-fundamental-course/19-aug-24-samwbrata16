@@ -29,12 +29,10 @@
 	
 	<main>
 		<article>
+			<h1><i>Crows and Cats</i> - A Cozy Book Cafe</h1>
 			<header>
-				<h1>Hi <span id="welcome-name">Visitor</span>, Welcome to Our Website</h1><button id="name-button">What's your Name?</button>
-			</header>
-			
-			<h3><b><i>Crows and Cats</i> - A Cozy Independent Book Cafe</b></h3>
-			
+				<h3>Hi <span id="welcome-name">Guest</span>, Welcome to Our Website!</h3>
+		
 			<div> 
 				<img 
 					class="img-slideshow" src="assets/photo-unsplash-1.jpg"
@@ -59,7 +57,7 @@
 			
 			<section class="profile-container"> 
 				<div class="profile-text">
-					<p>Crows and Cats is a fictional independent book cafe where we provide imported novels and comics/manga from a variety of genres.
+					<p>Crows and Cats is a fictional independent book cafe where we provide local and imported novels and comics/manga from a variety of genres.
 					We also provide a cozy place where you can hang out and read while having a cup of coffee, tea and/or snacks.
 					</p>
 				</div>
@@ -82,7 +80,7 @@
 							class="profile-img" src="assets/icon-freepik-2.png"
 						/>
 					</div>
-					<h5>Import Novels and Comics/Manga of Many Genres</h5>
+					<h5>Local and Import Novels and Comics/Manga</h5>
 				</div>
 				
 				<div class="profile-item">
@@ -119,29 +117,27 @@
 		<section class="form-container" id="message-us">
 			<form name="message-form" onsubmit="return validateForm()">
 				<h1>Message Us</h1>
-				Name: <input placeholder="Name" type="text" name="name" />
+				Name: <input placeholder="Name" type="text" name="name" class="box-size" />
 				<br />
 				
-				Date of Birth: <input type="date" name="birth-date" />
+				Date of Birth: <input type="date" name="birth-date" class="box-size" />
 				<br />
 				
 				Gender:
-				<input type="radio" id="male" name="gender" value="male">
+				<input type="radio" id="male" name="gender" value="Male">
 				<label for="male">Male</label>
-				<input type="radio" id="female" name="gender" value="female">
+				<input type="radio" id="female" name="gender" value="Female">
 				<label for="female">Female</label>
 				<br />
 				
 				Message:
-				<textarea placeholder="Type message" name="message"></textarea>
+				<textarea placeholder="Type message" name="message" class="box-size"></textarea>
 				<br />
 				
 				<input type="submit" value="Submit">
 			</form>
 			
 			<div class="message-container">
-					<p>Current time: </p>
-					<br>
 					<p>Name: <span id="sender-name"></span></p>
 					<p>Date of Birth: <span id="sender-birth-date"></span></p>
 					<p> Gender: <span id="sender-gender"></span></p>

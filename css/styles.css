@@ -3,12 +3,16 @@
 body{
 	background-color: #FFE4B5;
 }	
-
+	
 nav{
 	display: flex; 
 	align-items: center; 
 	justify-content: space-between;	
 }
+
+.header-wrapper{
+	background-color: #F4A460;
+}	
 	
 .logo-icon{
 	height: 48px; 
@@ -33,6 +37,7 @@ nav{
 .img-slideshow{
 	height: 500px; 
 	width: 1000px;
+	padding: 5px;
 }
 	
 .profile-container{
@@ -59,9 +64,13 @@ nav{
 }
 
 .message-container{
-	border: 1px solid;
 	margin: 10px;
 	padding-right: 100px;
+	background-color: #F4A460;
+}	
+
+.box-size{
+	width: 100%;
 }	
 
 footer{
@@ -82,5 +91,14 @@ footer{
 
 	.img-slideshow{
 		width: 100%;
+	}
+
+	.profile-container{
+		flex-direction: column;
 	}	
+	
+	.form-container{
+		flex-direction: column;	
+	}	
+	
 }	

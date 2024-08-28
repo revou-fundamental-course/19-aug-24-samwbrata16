@@ -1,14 +1,5 @@
 // Ini JavaScript
 
-function replaceName () {
-var welcomeName = prompt ("Hi, What's your name?", "");
-document.getElementById("welcome-name").innerHTML = welcomeName;
-}
-
-document.getElementById('name-button').addEventListener("click", function() {
-	replaceName();
-})
-
 var slideIndex = 1;
 	showDivs(slideIndex);
 	
@@ -50,6 +41,7 @@ function validateForm() {
 }
 
 function setSenderUI(name, birthDate, gender, message) {
+	document.getElementById("welcome-name").innerHTML = name;
 	document.getElementById("sender-name").innerHTML = name;
 	document.getElementById("sender-birth-date").innerHTML = birthDate;
 	document.getElementById("sender-gender").innerHTML = gender;
