@@ -64,8 +64,8 @@ nav{
 }
 
 .message-container{
-	margin: 10px;
-	padding-right: 100px;
+
+	width: 250px;
 	background-color: #F4A460;
 }	
 
@@ -78,7 +78,7 @@ footer{
 }
 
 @media only screen and (max-width: 600px) {
-	.header-wrapper {
+	.header-wrapper, .profile-container, .form-container{
 		flex-direction: column;
 	}
 	.nav-container{
@@ -89,16 +89,9 @@ footer{
 		margin-bottom: 20px;	
 	}
 
-	.img-slideshow{
+	.img-slideshow, .message-container{
 		width: 100%;
 	}
 
-	.profile-container{
-		flex-direction: column;
-	}	
-	
-	.form-container{
-		flex-direction: column;	
-	}	
-	
+
 }	
