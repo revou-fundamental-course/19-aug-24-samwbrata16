@@ -61,12 +61,12 @@ nav{
 	flex-direction: row; 
 	display: flex;
 	justify-content: space-evenly;
+	background-color: #F4A460;
 }
 
 .message-container{
 
 	width: 250px;
-	background-color: #F4A460;
 }	
 
 .box-size{
